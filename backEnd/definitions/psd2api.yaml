@@ -1,0 +1,3367 @@
+paths:
+  '/customers/{id}/accessTokens/{fk}':
+    get:
+      tags:
+        - customer
+      summary: Find a related item by id for accessTokens.
+      operationId: customer.prototype.__findById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - customer
+      summary: Delete a related item by id for accessTokens.
+      operationId: customer.prototype.__destroyById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - customer
+      summary: Update a related item by id for accessTokens.
+      operationId: customer.prototype.__updateById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+  '/customers/{id}/accounts/{fk}':
+    get:
+      tags:
+        - customer
+      summary: Find a related item by id for accounts.
+      operationId: customer.prototype.__findById__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    delete:
+      tags:
+        - customer
+      summary: Delete a related item by id for accounts.
+      operationId: customer.prototype.__destroyById__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - customer
+      summary: Update a related item by id for accounts.
+      operationId: customer.prototype.__updateById__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/account'
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  '/customers/{id}/accessTokens':
+    get:
+      tags:
+        - customer
+      summary: Queries accessTokens of customer.
+      operationId: customer.prototype.__get__accessTokens
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AccessToken'
+      deprecated: false
+    post:
+      tags:
+        - customer
+      summary: Creates a new instance in accessTokens of this model.
+      operationId: customer.prototype.__create__accessTokens
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - customer
+      summary: Deletes all accessTokens of this model.
+      operationId: customer.prototype.__delete__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/customers/{id}/accessTokens/count':
+    get:
+      tags:
+        - customer
+      summary: Counts accessTokens of customer.
+      operationId: customer.prototype.__count__accessTokens
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/customers/{id}/accounts':
+    get:
+      tags:
+        - customer
+      summary: Queries accounts of customer.
+      operationId: customer.prototype.__get__accounts
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/account'
+      deprecated: false
+    post:
+      tags:
+        - customer
+      summary: Creates a new instance in accounts of this model.
+      operationId: customer.prototype.__create__accounts
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/account'
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    delete:
+      tags:
+        - customer
+      summary: Deletes all accounts of this model.
+      operationId: customer.prototype.__delete__accounts
+      parameters:
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/customers/{id}/accounts/count':
+    get:
+      tags:
+        - customer
+      summary: Counts accounts of customer.
+      operationId: customer.prototype.__count__accounts
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /customers:
+    post:
+      tags:
+        - customer
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: customer.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+    put:
+      tags:
+        - customer
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: customer.upsert__put_customers
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+    patch:
+      tags:
+        - customer
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: customer.upsert__patch_customers
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+    get:
+      tags:
+        - customer
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: customer.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/customer'
+      deprecated: false
+  /customers/replaceOrCreate:
+    post:
+      tags:
+        - customer
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: customer.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+  /customers/upsertWithWhere:
+    post:
+      tags:
+        - customer
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: customer.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+  '/customers/{id}/exists':
+    get:
+      tags:
+        - customer
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'customer.exists__get_customers_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/customers/{id}':
+    head:
+      tags:
+        - customer
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'customer.exists__head_customers_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - customer
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: customer.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+    delete:
+      tags:
+        - customer
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: customer.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    put:
+      tags:
+        - customer
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'customer.prototype.updateAttributes__put_customers_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/customer'
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+    patch:
+      tags:
+        - customer
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'customer.prototype.updateAttributes__patch_customers_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/customer'
+        - name: id
+          in: path
+          description: customer id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+  '/customers/{id}/replace':
+    post:
+      tags:
+        - customer
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: customer.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+  /customers/findOne:
+    get:
+      tags:
+        - customer
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: customer.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+  /customers/update:
+    post:
+      tags:
+        - customer
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: customer.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/customer'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /customers/count:
+    get:
+      tags:
+        - customer
+      summary: Count instances of the model matched by where from the data source.
+      operationId: customer.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /customers/login:
+    post:
+      tags:
+        - customer
+      summary: Login a user with username/email and password.
+      operationId: customer.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: >-
+            Related objects to include in the response. See the description of
+            return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              The response body contains properties of the AccessToken created
+              on login.
+
+              Depending on the value of `include` parameter, the body may
+              contain additional properties:
+
+
+
+
+
+
+
+                - `user` - `U+007BUserU+007D` - Data of the currently logged in
+
+              user. (`include=user`)
+
+
+            type: object
+      deprecated: false
+  /customers/logout:
+    post:
+      tags:
+        - customer
+      summary: Logout a user with access token.
+      operationId: customer.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /customers/confirm:
+    get:
+      tags:
+        - customer
+      summary: Confirm a user registration with email verification token.
+      operationId: customer.confirm
+      parameters:
+        - name: uid
+          in: query
+          required: true
+          type: string
+        - name: token
+          in: query
+          required: true
+          type: string
+        - name: redirect
+          in: query
+          required: false
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /customers/reset:
+    post:
+      tags:
+        - customer
+      summary: Reset password for a user with email.
+      operationId: customer.resetPassword
+      parameters:
+        - name: options
+          in: body
+          required: true
+          schema:
+            type: object
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/accounts/{id}/customer':
+    get:
+      tags:
+        - account
+      summary: Fetches belongsTo relation customer.
+      operationId: account.prototype.__get__customer
+      parameters:
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/customer'
+      deprecated: false
+  '/accounts/{id}/payments/{fk}':
+    get:
+      tags:
+        - account
+      summary: Find a related item by id for payments.
+      operationId: account.prototype.__findById__payments
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for payments
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    delete:
+      tags:
+        - account
+      summary: Delete a related item by id for payments.
+      operationId: account.prototype.__destroyById__payments
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for payments
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - account
+      summary: Update a related item by id for payments.
+      operationId: account.prototype.__updateById__payments
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for payments
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/payment'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+  '/accounts/{id}/tpps/{fk}':
+    get:
+      tags:
+        - account
+      summary: Find a related item by id for tpps.
+      operationId: account.prototype.__findById__tpps
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for tpps
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    delete:
+      tags:
+        - account
+      summary: Delete a related item by id for tpps.
+      operationId: account.prototype.__destroyById__tpps
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for tpps
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - account
+      summary: Update a related item by id for tpps.
+      operationId: account.prototype.__updateById__tpps
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for tpps
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/tpp'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  '/accounts/{id}/tpps/rel/{fk}':
+    put:
+      tags:
+        - account
+      summary: Add a related item by id for tpps.
+      operationId: account.prototype.__link__tpps
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for tpps
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/tppauthorization'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    delete:
+      tags:
+        - account
+      summary: Remove the tpps relation to an item by id.
+      operationId: account.prototype.__unlink__tpps
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for tpps
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    head:
+      tags:
+        - account
+      summary: Check the existence of tpps relation to an item by id.
+      operationId: account.prototype.__exists__tpps
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for tpps
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: boolean
+      deprecated: false
+  '/accounts/{id}/payments':
+    get:
+      tags:
+        - account
+      summary: Queries payments of account.
+      operationId: account.prototype.__get__payments
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/payment'
+      deprecated: false
+    post:
+      tags:
+        - account
+      summary: Creates a new instance in payments of this model.
+      operationId: account.prototype.__create__payments
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/payment'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    delete:
+      tags:
+        - account
+      summary: Deletes all payments of this model.
+      operationId: account.prototype.__delete__payments
+      parameters:
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/accounts/{id}/payments/count':
+    get:
+      tags:
+        - account
+      summary: Counts payments of account.
+      operationId: account.prototype.__count__payments
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/accounts/{id}/tpps':
+    get:
+      tags:
+        - account
+      summary: Queries tpps of account.
+      operationId: account.prototype.__get__tpps
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/tpp'
+      deprecated: false
+    post:
+      tags:
+        - account
+      summary: Creates a new instance in tpps of this model.
+      operationId: account.prototype.__create__tpps
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/tpp'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    delete:
+      tags:
+        - account
+      summary: Deletes all tpps of this model.
+      operationId: account.prototype.__delete__tpps
+      parameters:
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/accounts/{id}/tpps/count':
+    get:
+      tags:
+        - account
+      summary: Counts tpps of account.
+      operationId: account.prototype.__count__tpps
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /accounts:
+    post:
+      tags:
+        - account
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: account.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    put:
+      tags:
+        - account
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: account.upsert__put_accounts
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    patch:
+      tags:
+        - account
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: account.upsert__patch_accounts
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    get:
+      tags:
+        - account
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: account.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/account'
+      deprecated: false
+  /accounts/replaceOrCreate:
+    post:
+      tags:
+        - account
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: account.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  /accounts/upsertWithWhere:
+    post:
+      tags:
+        - account
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: account.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  '/accounts/{id}/exists':
+    get:
+      tags:
+        - account
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'account.exists__get_accounts_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/accounts/{id}':
+    head:
+      tags:
+        - account
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'account.exists__head_accounts_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - account
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: account.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    delete:
+      tags:
+        - account
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: account.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    put:
+      tags:
+        - account
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'account.prototype.updateAttributes__put_accounts_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/account'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    patch:
+      tags:
+        - account
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'account.prototype.updateAttributes__patch_accounts_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/account'
+        - name: id
+          in: path
+          description: account id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  '/accounts/{id}/replace':
+    post:
+      tags:
+        - account
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: account.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  /accounts/findOne:
+    get:
+      tags:
+        - account
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: account.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  /accounts/update:
+    post:
+      tags:
+        - account
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: account.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/account'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /accounts/count:
+    get:
+      tags:
+        - account
+      summary: Count instances of the model matched by where from the data source.
+      operationId: account.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/tpps/{id}/accounts/{fk}':
+    get:
+      tags:
+        - tpp
+      summary: Find a related item by id for accounts.
+      operationId: tpp.prototype.__findById__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    delete:
+      tags:
+        - tpp
+      summary: Delete a related item by id for accounts.
+      operationId: tpp.prototype.__destroyById__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - tpp
+      summary: Update a related item by id for accounts.
+      operationId: tpp.prototype.__updateById__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/account'
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  '/tpps/{id}/accounts/rel/{fk}':
+    put:
+      tags:
+        - tpp
+      summary: Add a related item by id for accounts.
+      operationId: tpp.prototype.__link__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/tppauthorization'
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    delete:
+      tags:
+        - tpp
+      summary: Remove the accounts relation to an item by id.
+      operationId: tpp.prototype.__unlink__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    head:
+      tags:
+        - tpp
+      summary: Check the existence of accounts relation to an item by id.
+      operationId: tpp.prototype.__exists__accounts
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accounts
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: boolean
+      deprecated: false
+  '/tpps/{id}/accounts':
+    get:
+      tags:
+        - tpp
+      summary: Queries accounts of tpp.
+      operationId: tpp.prototype.__get__accounts
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/account'
+      deprecated: false
+    post:
+      tags:
+        - tpp
+      summary: Creates a new instance in accounts of this model.
+      operationId: tpp.prototype.__create__accounts
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/account'
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+    delete:
+      tags:
+        - tpp
+      summary: Deletes all accounts of this model.
+      operationId: tpp.prototype.__delete__accounts
+      parameters:
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/tpps/{id}/accounts/count':
+    get:
+      tags:
+        - tpp
+      summary: Counts accounts of tpp.
+      operationId: tpp.prototype.__count__accounts
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /tpps:
+    post:
+      tags:
+        - tpp
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: tpp.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    put:
+      tags:
+        - tpp
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: tpp.upsert__put_tpps
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    patch:
+      tags:
+        - tpp
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: tpp.upsert__patch_tpps
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    get:
+      tags:
+        - tpp
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: tpp.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/tpp'
+      deprecated: false
+  /tpps/replaceOrCreate:
+    post:
+      tags:
+        - tpp
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: tpp.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  /tpps/upsertWithWhere:
+    post:
+      tags:
+        - tpp
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: tpp.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  '/tpps/{id}/exists':
+    get:
+      tags:
+        - tpp
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'tpp.exists__get_tpps_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/tpps/{id}':
+    head:
+      tags:
+        - tpp
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'tpp.exists__head_tpps_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - tpp
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: tpp.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    delete:
+      tags:
+        - tpp
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: tpp.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    put:
+      tags:
+        - tpp
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'tpp.prototype.updateAttributes__put_tpps_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tpp'
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+    patch:
+      tags:
+        - tpp
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'tpp.prototype.updateAttributes__patch_tpps_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tpp'
+        - name: id
+          in: path
+          description: tpp id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  '/tpps/{id}/replace':
+    post:
+      tags:
+        - tpp
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: tpp.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  /tpps/findOne:
+    get:
+      tags:
+        - tpp
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: tpp.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  /tpps/update:
+    post:
+      tags:
+        - tpp
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: tpp.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tpp'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /tpps/count:
+    get:
+      tags:
+        - tpp
+      summary: Count instances of the model matched by where from the data source.
+      operationId: tpp.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  '/payments/{id}/sourceaccount':
+    get:
+      tags:
+        - payment
+      summary: Fetches belongsTo relation sourceaccount.
+      operationId: payment.prototype.__get__sourceaccount
+      parameters:
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+        - name: id
+          in: path
+          description: payment id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  '/payments/{id}/destinationaccount':
+    get:
+      tags:
+        - payment
+      summary: Fetches belongsTo relation destinationaccount.
+      operationId: payment.prototype.__get__destinationaccount
+      parameters:
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+        - name: id
+          in: path
+          description: payment id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  /payments:
+    post:
+      tags:
+        - payment
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: payment.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    put:
+      tags:
+        - payment
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: payment.upsert__put_payments
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    patch:
+      tags:
+        - payment
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: payment.upsert__patch_payments
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    get:
+      tags:
+        - payment
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: payment.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/payment'
+      deprecated: false
+  /payments/replaceOrCreate:
+    post:
+      tags:
+        - payment
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: payment.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+  /payments/upsertWithWhere:
+    post:
+      tags:
+        - payment
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: payment.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+  '/payments/{id}/exists':
+    get:
+      tags:
+        - payment
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'payment.exists__get_payments_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/payments/{id}':
+    head:
+      tags:
+        - payment
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'payment.exists__head_payments_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - payment
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: payment.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    delete:
+      tags:
+        - payment
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: payment.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    put:
+      tags:
+        - payment
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'payment.prototype.updateAttributes__put_payments_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/payment'
+        - name: id
+          in: path
+          description: payment id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+    patch:
+      tags:
+        - payment
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'payment.prototype.updateAttributes__patch_payments_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/payment'
+        - name: id
+          in: path
+          description: payment id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+  '/payments/{id}/replace':
+    post:
+      tags:
+        - payment
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: payment.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+  /payments/findOne:
+    get:
+      tags:
+        - payment
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: payment.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/payment'
+      deprecated: false
+  /payments/update:
+    post:
+      tags:
+        - payment
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: payment.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/payment'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /payments/count:
+    get:
+      tags:
+        - payment
+      summary: Count instances of the model matched by where from the data source.
+      operationId: payment.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /payments/execute:
+    post:
+      tags:
+        - payment
+      operationId: payment.execute
+      parameters:
+        - name: request
+          in: body
+          description: >-
+            {"sourceAccountId": "1", "tppId": "3", "destinationAccountId": "68",
+            "amount": 3}
+          required: false
+          schema:
+            description: >-
+              {"sourceAccountId": "1", "tppId": "3", "destinationAccountId":
+              "68", "amount": 3}
+            type: object
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              response:
+                type: string
+      deprecated: false
+  /payments/getAccountTransactions:
+    get:
+      tags:
+        - payment
+      operationId: payment.getAccountTransactions
+      parameters:
+        - name: accountId
+          in: query
+          required: false
+          type: string
+        - name: tppId
+          in: query
+          required: false
+          type: string
+        - name: periodInMonth
+          in: query
+          required: false
+          type: number
+          format: double
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              response:
+                type: array
+                items:
+                  type: object
+      deprecated: false
+  '/tppauthorizations/{id}/account':
+    get:
+      tags:
+        - tppauthorization
+      summary: Fetches belongsTo relation account.
+      operationId: tppauthorization.prototype.__get__account
+      parameters:
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+        - name: id
+          in: path
+          description: tppauthorization id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/account'
+      deprecated: false
+  '/tppauthorizations/{id}/tpp':
+    get:
+      tags:
+        - tppauthorization
+      summary: Fetches belongsTo relation tpp.
+      operationId: tppauthorization.prototype.__get__tpp
+      parameters:
+        - name: refresh
+          in: query
+          required: false
+          type: boolean
+        - name: id
+          in: path
+          description: tppauthorization id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tpp'
+      deprecated: false
+  /tppauthorizations:
+    post:
+      tags:
+        - tppauthorization
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: tppauthorization.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    put:
+      tags:
+        - tppauthorization
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: tppauthorization.upsert__put_tppauthorizations
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    patch:
+      tags:
+        - tppauthorization
+      summary: >-
+        Patch an existing model instance or insert a new one into the data
+        source.
+      operationId: tppauthorization.upsert__patch_tppauthorizations
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    get:
+      tags:
+        - tppauthorization
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: tppauthorization.find
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/tppauthorization'
+      deprecated: false
+  /tppauthorizations/replaceOrCreate:
+    post:
+      tags:
+        - tppauthorization
+      summary: >-
+        Replace an existing model instance or insert a new one into the data
+        source.
+      operationId: tppauthorization.replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+  /tppauthorizations/upsertWithWhere:
+    post:
+      tags:
+        - tppauthorization
+      summary: >-
+        Update an existing model instance or insert a new one into the data
+        source based on the where criteria.
+      operationId: tppauthorization.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+  '/tppauthorizations/{id}/exists':
+    get:
+      tags:
+        - tppauthorization
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'tppauthorization.exists__get_tppauthorizations_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/tppauthorizations/{id}':
+    head:
+      tags:
+        - tppauthorization
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'tppauthorization.exists__head_tppauthorizations_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - tppauthorization
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: tppauthorization.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields and include - must be a JSON-encoded string
+            ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    delete:
+      tags:
+        - tppauthorization
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: tppauthorization.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    put:
+      tags:
+        - tppauthorization
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: 'tppauthorization.prototype.updateAttributes__put_tppauthorizations_{id}'
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tppauthorization'
+        - name: id
+          in: path
+          description: tppauthorization id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+    patch:
+      tags:
+        - tppauthorization
+      summary: >-
+        Patch attributes for a model instance and persist it into the data
+        source.
+      operationId: >-
+        tppauthorization.prototype.updateAttributes__patch_tppauthorizations_{id}
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tppauthorization'
+        - name: id
+          in: path
+          description: tppauthorization id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+  '/tppauthorizations/{id}/replace':
+    post:
+      tags:
+        - tppauthorization
+      summary: >-
+        Replace attributes for a model instance and persist it into the data
+        source.
+      operationId: tppauthorization.replaceById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+  /tppauthorizations/findOne:
+    get:
+      tags:
+        - tppauthorization
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: tppauthorization.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: >-
+            Filter defining fields, where, include, order, offset, and limit -
+            must be a JSON-encoded string ({"something":"value"})
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/tppauthorization'
+      deprecated: false
+  /tppauthorizations/update:
+    post:
+      tags:
+        - tppauthorization
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: tppauthorization.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/tppauthorization'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /tppauthorizations/count:
+    get:
+      tags:
+        - tppauthorization
+      summary: Count instances of the model matched by where from the data source.
+      operationId: tppauthorization.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /tppauthorizations/authorize:
+    post:
+      tags:
+        - tppauthorization
+      operationId: tppauthorization.authorize
+      parameters:
+        - name: request
+          in: body
+          description: '{"accountId": "1", "tppId": "3", "authorizedAccountId": "68"}'
+          required: false
+          schema:
+            description: '{"accountId": "1", "tppId": "3", "authorizedAccountId": "68"}'
+            type: object
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              response:
+                type: string
+      deprecated: false
+definitions:
+  x-any:
+    properties: {}
+  AccessToken:
+    properties:
+      id:
+        type: string
+      ttl:
+        default: 1209600
+        description: time to live in seconds (2 weeks by default)
+        type: number
+        format: double
+      created:
+        type: string
+        format: date-time
+      userId:
+        type: string
+    required:
+      - id
+    additionalProperties: false
+  account:
+    properties:
+      id:
+        type: string
+      balance:
+        type: number
+        format: double
+      currency:
+        type: string
+      customerId:
+        type: string
+    required:
+      - balance
+      - currency
+    additionalProperties: false
+  customer:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      email:
+        type: string
+      address:
+        type: string
+      bsn:
+        type: string
+      phonenumber:
+        type: string
+      realm:
+        type: string
+      username:
+        type: string
+      credentials:
+        type: object
+      challenges:
+        type: object
+      emailVerified:
+        type: boolean
+      status:
+        type: string
+      created:
+        type: string
+        format: date-time
+      lastUpdated:
+        type: string
+        format: date-time
+    required:
+      - name
+      - email
+      - address
+      - bsn
+      - phonenumber
+    additionalProperties: false
+  payment:
+    properties:
+      id:
+        type: string
+      amount:
+        type: number
+        format: double
+      date:
+        type: string
+        format: date-time
+      description:
+        type: string
+      sourceaccountid:
+        type: string
+      destinationaccountId:
+        type: string
+    required:
+      - amount
+      - date
+    additionalProperties: false
+  tpp:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      type:
+        type: string
+    required:
+      - name
+      - type
+    additionalProperties: false
+  tppauthorization:
+    properties:
+      id:
+        type: string
+      date:
+        type: string
+        format: date-time
+      authorizedAccountId:
+        type: string
+      accountId:
+        type: string
+      tppId:
+        type: string
+    additionalProperties: false
+basePath: /api
+swagger: '2.0'
+info:
+  x-ibm-name: psd2api
+  version: 1.0.0
+  title: psd2api
+schemes:
+  - https
+host: $(catalog.host)
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
+security:
+  - clientIdHeader: []
+    clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  catalogs:
+    apic-dev:
+      properties:
+        runtime-url: $(TARGET_URL)
+    sb:
+      properties:
+        runtime-url: >-
+          https://apiconnect-25ebf630-e168-4ca0-9553-0945c01aaee3.group-4--developing-services-for-the-cloud-group4--space.apic.mybluemix.net
+        invoke-tls-profile: 'client:Loopback-client'
+  assembly:
+    execute:
+      - invoke:
+          target-url: $(runtime-url)$(request.path)$(request.search)
+          tls-profile: $(invoke-tls-profile)
+          username: e30ac9eb-3525-4bf6-a797-79d8fe9ef8e1-bluemix
+          password: 98319eee4edb3b0196dee28a0b5f5499b266ace134bf4de1e2beba23b622d986
+  properties:
+    runtime-url:
+      value: ''
+      description: ''
+      encoded: false
+    invoke-tls-profile:
+      value: ''
+      description: ''
+      encoded: false
+  gateway: datapower-gateway

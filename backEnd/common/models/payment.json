@@ -1,0 +1,43 @@
+{
+  "name": "payment",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "generated": true,
+      "required": false
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sourceaccount": {
+      "type": "belongsTo",
+      "model": "account",
+      "foreignKey": "sourceaccountid"
+    },
+    "destinationaccount": {
+      "type": "belongsTo",
+      "model": "account",
+      "foreignKey": "destinationaccountId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

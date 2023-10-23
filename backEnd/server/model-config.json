@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "psd2accesstoken",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "psd2acl",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "psd2rolemapping",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "psd2role",
+    "public": false
+  },
+  "customer": {
+    "dataSource": "psd2customer",
+    "public": true
+  },
+  "account": {
+    "dataSource": "psd2account",
+    "public": true
+  },
+  "tpp": {
+    "dataSource": "psd2tpp",
+    "public": true
+  },
+  "payment": {
+    "dataSource": "psd2payment",
+    "public": true
+  },
+  "tppauthorization": {
+    "dataSource": "psd2tppauthorization",
+    "public": true
+  }
+}

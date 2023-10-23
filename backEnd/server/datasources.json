@@ -1,0 +1,83 @@
+{
+  "psd2accesstoken": {
+    "url": "",
+    "database": "accesstoken",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2accesstoken",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2role": {
+    "url": "",
+    "database": "role",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2role",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2rolemapping": {
+    "url": "",
+    "database": "rolemapping",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2rolemapping",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2acl": {
+    "url": "",
+    "database": "acl",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2acl",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2customer": {
+    "url": "",
+    "database": "customer",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2customer",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2account": {
+    "url": "",
+    "database": "account",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2account",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2tpp": {
+    "url": "",
+    "database": "tpp",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2tpp",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2payment": {
+    "url": "",
+    "database": "payment",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2payment",
+    "modelIndex": "",
+    "connector": "cloudant"
+  },
+  "psd2tppauthorization": {
+    "url": "",
+    "database": "tppauthorization",
+    "username": "f11095fa-673d-456c-abee-e81bbaac0c2c-bluemix",
+    "password": "54e6990b151c7fbe4e0ccfc09615c5eeb60622e23b543311797676ef09be3381",
+    "name": "psd2tppauthorization",
+    "modelIndex": "",
+    "connector": "cloudant"
+  }
+}

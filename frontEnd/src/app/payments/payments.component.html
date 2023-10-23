@@ -1,0 +1,43 @@
+<h2>Select a Source Accounts</h2>
+
+<div *ngFor="let account of accounts">
+	  <input type="radio" name="Account" [value]=account.id (change)="updateAccountId(account.id);"> Source AccountID: {{account.id}}
+</div>
+
+<h2>Select a Destination Accounts</h2>
+
+<div *ngFor="let account of accounts">
+	  <input type="radio" name="DestAccount" [value]=account.id (change)="updateDestinationAccountId(account.id);">Destination AccountID: {{account.id}}
+</div>
+
+<div>
+    <label>Amount:
+      <input [(ngModel)]="amount" placeholder="amount">
+    </label>
+</div>
+
+<div ng-app>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add();">
+    Add new Payment
+  </button>
+</div>
+
+<h2>List of Existing Payments</h2>
+
+<ul>
+  <li *ngFor="let payment of payments">
+	PaymentId: {{payment.id}} // Source Account: {{payment.sourceaccountid}} // Destination Account: {{payment.destinationaccountid}} // Amount: {{payment.amount}} // Date: {{payment.date}}
+  </li>
+</ul>
+
+<h2>List of Existing Payments for one specific account</h2>
+
+<ul>
+  <li *ngFor="let payment of paymentsOneAccount">
+	PaymentId: {{payment.id}} // Source Account: {{payment.sourceaccountid}} // Destination Account: {{payment.destinationaccountid}} // Amount: {{payment.amount}} // Date: {{payment.date}}
+  </li>
+</ul>
+
+
+<app-messages></app-messages>

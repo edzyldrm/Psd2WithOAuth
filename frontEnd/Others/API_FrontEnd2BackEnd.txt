@@ -1,0 +1,48 @@
+API's
+
+- Bank Login
+-- Input Parameters:
+--- username
+--- password
+-- Response:
+--- Result (Ok / Nok)
+--- list of account (and/or) Credit Cards
+---- Each element of the list contain (AccountNumber)
+
+- Authorize
+-- Input Parameters:
+--- Account_id
+--- TPP_id
+--- TPP_Type (AISP or PISP)
+-- Response:
+--- Result (Ok / Nok)
+--- Response Code
+
+- Payment
+-- Input Parameters:
+--- Account_Id
+--- TPP_Id
+--- Amount
+--- Destination_Account_id
+--- Transaction_Info
+-- Response:
+--- Result (Yes/No)
+--- Response Code
+
+- AccountInformation
+--Input parameters:
+--- Account_id
+--- TPP_Id
+--- From
+--- To
+-- Response:
+--- Result (Ok / Nok)
+--- TransactionList
+---- each element of the list has:
+---- TransactionInfo
+---- Amount
+---- Date
+--- Balance
+
+
+

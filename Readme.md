@@ -1,4 +1,4 @@
-﻿Documents includes slides and demo for Developing Services for the Cloud Group4
+﻿Documents includes the code, slides and demo for Developing Services for the Cloud Group
 
 \*\* NOTE \*\*\*
 

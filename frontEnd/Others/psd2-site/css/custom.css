@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* css for dscf */
+
+body {
+	background-color: #c6c3b2;
+	
+	
+}
+.p0 {
+	padding : 0;
+	
+}
+.m0 {
+	margin: 0;	
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	shape-margin: 0;
+	
+}
+.contentcol{
+	background-color: aliceblue;
+	color: #000000;
+	heght : 500px;
+}
+.h800{
+	height: 800px;
+	/*background-color: pink;*/
+}
+.h500{
+	height: 500px;
+	/*background-color: black;*/
+	
+}
+.h200{
+	height: 200px;
+	max-height: 200px;
+}
+.h100{
+	height: 100px;
+}
+.h100wht{
+	height: 100px;
+	background-color:#fdfdfd; 
+}
+.border-right {
+    border-right: 1px solid #ddd;
+}
+.borders {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: -1px;
+}
+.border-left {
+    border-left: 1px solid #ddd;
+}
+.imgcontainer {
+	background-color:lightgoldenrodyellow;
+/*	height: 300px;
+	width: 300px;*/
+	padding: 0;
+	margin: 0;
+	}
+.bgblack{
+	background-color: black;
+}
+.bgwht{
+	background-color: white;
+}
+.bgblueish{
+	background-color: #018fd3;
+}
+.bglightblue{
+	background-color: #e5f3fa;
+}
+.centerBlock {
+  display: table;
+  margin: auto;
+}
+/* theme */ 
+
+.bggeneral{
+background-color: #bdc3c7;
+}
+.bglogo{
+	background-color: #95a5a6;
+}
+
+.lgcontainer{
+	max-height : 200px;
+	max-width: auto;
+	
+	display : block;
+	/*position : relative;
+	object-fit: contain;
+	*/
+	
+	
+	}
+.lgimg{
+	position : relative;
+	max-width: auto;
+	max-height: 200px;
+	
+}

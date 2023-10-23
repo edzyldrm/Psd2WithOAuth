@@ -1,0 +1,6 @@
+applications:
+- name: angular-psd2
+  buildpack: staticfile_buildpack
+  routes:
+  - route: angular-psd2.mybluemix.net
+  memory: 1024M

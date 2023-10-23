@@ -1,0 +1,2 @@
+prod - selectbank - banklogin - selectacc - prod(pay button enabled)
+aisp - selectbank - banklogin - selectacc(ok/Nok msg) >< aisplookup

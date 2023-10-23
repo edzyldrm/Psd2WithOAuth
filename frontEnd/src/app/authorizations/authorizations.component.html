@@ -1,0 +1,34 @@
+<h2>Select a Source Accounts</h2>
+
+<div *ngFor="let account of accounts">
+	  <input type="radio" name="Account" [value]=account.id (change)="updateAccountId(account.id);"> Source AccountID: {{account.id}}
+</div>
+
+<h2>Select a Destination Accounts</h2>
+
+<div *ngFor="let account of accounts">
+	  <input type="radio" name="DestAccount" [value]=account.id (change)="updateDestinationAccountId(account.id);">Destination AccountID: {{account.id}}
+</div>
+
+<h2>List of TPPs</h2>
+
+<div *ngFor="let tpp of tpps">
+	  <input type="radio" name="Tpp" [value]=tpp.id (change)="updateTpp(tpp);">TppId: {{tpp.id}} // Tpp Name: {{tpp.name}}
+</div>
+
+<div ng-app>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add();">
+    Add new Authorization
+  </button>
+</div>
+
+<h2>List of Existing Authorizations</h2>
+
+<ul>
+  <li *ngFor="let authorization of authorizations">
+	AuthorizationId: {{authorization.id}} // AccountId: {{authorization.accountId}} // TppId: {{authorization.tppId}} // AuthorizedAccountId: {{authorization.authorizedAccountId}}
+  </li>
+</ul>
+
+<app-messages></app-messages>

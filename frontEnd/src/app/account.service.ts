@@ -15,8 +15,8 @@ export class AccountService {
 
   private httpOptions = {
   headers: new HttpHeaders({ 'accept': 'application/json',
-      'x-ibm-client-id': '99241f55-d1d7-4816-b25c-71c91676aeeb',
-      'x-ibm-client-secret': 'X3bA0gI7aT8lR7cG0rH2hL0iE2eO0gW4kR1eN8lA3aF0bG8vH2'})
+      'x-ibm-client-id': 'secret',
+      'x-ibm-client-secret': 'secret'})
   };
 
   constructor(
